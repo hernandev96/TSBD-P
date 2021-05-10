@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+
+body{
+    /* background: #8E0E00;  
+    background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00); 
+    background: linear-gradient(to right, #1F1C18, #8E0E00);  */
+    background-image: url("../images/fondo.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    
+}
+
+/* estilos de la tarjeta de inico de sesion */
+
+.tarjeta{
+    width: 40.0rem;
+    height: 43.0rem;
+    top:12.5rem;
+    
+}
+#card{
+    border:none;
+    border-radius: 3.0rem;
+    background-color: transparent;
+    
+}
+
+/* Estilos de los componentes del form */
+.input-style{
+
+    width: 30.0rem;
+    font-size: 2.0rem;
+    background: none;
+    border: none;
+    color: white;
+    outline: none;
+    border-bottom: solid 0.2rem white;
+    margin-bottom: 5.0rem;
+    
+}
+
+#btn-login{
+    margin-bottom: 5.0rem;
+    width: 30.0rem;
+    font-size:2.0rem;
+    color:white;
+    border-radius:1.0rem;
+    background: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+
+}
+::-webkit-input-placeholder{
+    color :white;
+}
+.select-style{
+    width: 30.0rem;
+    font-size: 2.0rem;
+    background: none;
+    border: none;
+    color: white;
+    outline: none;
+    border-bottom: solid 0.2rem white;
+    margin-bottom: 5.0rem;
+}
+option{
+    color:black;
+}
