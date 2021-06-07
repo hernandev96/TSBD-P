@@ -1,0 +1,42 @@
+.overlay { 
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .overlay:target{
+    visibility: visible;
+    opacity: 1;
+  }
+  #popupBody{
+    width: 30%;
+    padding: 2%;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 0.5rem #CCC;
+    background: rgb(22, 21, 21);
+    position: relative;
+    margin: 20% auto;
+   
+}
+#popupBody p{
+    color:white;
+    font-size: 2.0rem;
+}
+#popupBody h2{
+    color:white;
+    font-size: 2.0rem;
+    display: inline-block;
+    justify-content: space-evenly;
+}
+#cerrar{
+
+    position: relative;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 200ms;
+    border-radius: 0.7rem;
+}
+.popupContent{
+    margin-top:1.0rem;
+}

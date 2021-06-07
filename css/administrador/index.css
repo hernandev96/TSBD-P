@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+.stylebody{
+    
+    background-image: url("../../images/fondo.png");
+    background-repeat:no-repeat;
+    background-size: 100% 120%;
+    overflow:hidden;
+}
+header{
+   
+    height: 10.0rem;
+    background: none;
+    /* background: linear-gradient(to left, #0b8793, #360033);  */
+
+
+}
+header a{
+
+    color:white;
+    font-size: 3.0rem;
+    text-decoration: none;
+    font-weight: bolder;
+    
+}
+header a:hover{
+    
+    color: white;
+}
+ 
+#logout{
+    font-size: 2.0rem;
+    margin-top: 1.0rem;
+    color: white;
+}
+.flexing{
+    display:flex;
+    justify-content: space-evenly;
+}
+.btn-img{
+
+    border:none;
+    background: none;
+    position: relative;
+    bottom:-2.0rem;
+    left: 8.0rem;
+}
+
+.card{
+   
+    margin-top: 6.0rem;
+    background: #C6FFDD;
+    background: -webkit-linear-gradient(to top, #f7797d, #FBD786, #C6FFDD); 
+    background: linear-gradient(to top, #f7797d, #FBD786, #C6FFDD);
+    width: 27.0rem;
+    height: 40.0rem;
+}
+
+#productos_admin,#empleado_admin{
+    border-radius: 1.5rem;
+}
+.ubication{
+    margin-top:7.0rem
+}
+
+
+
+
+@media screen AND  (max-width:70.0rem){
+
+    .stylebody{
+        overflow: visible;
+    }
+    header{
+        width:100%;
+        height: 13.0rem;
+    }
+    header a{
+
+        color:white;
+        font-size: 2.0rem;
+        text-decoration: none;
+        font-weight: normal;
+        
+    }
+    #logout{
+        font-size: 1.4rem;
+        margin-top: 0.7rem;
+        
+    }
+    .flexing{
+        display:inline-flex;
+        justify-content: space-evenly; 
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+
