@@ -14,14 +14,17 @@ function validar($user,$pass,$typeus){
     if($row>0){
         $_SESSION["user"] = $data['username'];
 		if($typeus=="administrador"){
+            mysqli_close($conexion);
             return 1;
         }else{
+            mysqli_close($conexion);
             return 2;
         }
     }else{
+        mysqli_close($conexion);
         echo 0;
     }
-
+    
 
 }
 
