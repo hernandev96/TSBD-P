@@ -2,7 +2,6 @@
 session_start();
 session_destroy();
 session_unset();
-
 ?>
 <!doctype html>
 <html>
@@ -27,7 +26,7 @@ session_unset();
            $("form").focusout(function(){
                 $("body").css("backdrop-filter","none");
            });
-
+           
            $("#login-form").submit(function(e){
                 e.preventDefault();
                 $.ajax({
@@ -35,13 +34,13 @@ session_unset();
                     url:"backend/validar.php",
                     data:$(this).serialize(),
                     success:function(result){
-                        // console.log("El resultado fue: "+result);
-                        // console.log(typeof(result));
+                        console.log("El resultado fue: "+result);
+                         console.log(typeof(result));
                         if(result=="1"){
                             location.href="Administrador/panel.php";
                         }
                         if(result=="2"){
-                            location.href("Trabajador/panel.php");
+                            location.href="Trabajador/PanelTrabajador.php";
                         }if(result=="0"){
                             $('#login-form')[0].reset();
                             alerta();

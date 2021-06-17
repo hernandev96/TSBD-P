@@ -16,7 +16,7 @@ function validar($user,$pass,$typeus){
 		if($typeus=="administrador"){
             mysqli_close($conexion);
             return 1;
-        }else{
+        }if($typeus=="trabajador"){
             mysqli_close($conexion);
             return 2;
         }
