@@ -12,7 +12,7 @@ html,body{
     background-image: url("../../images/fondo.png");
     background-repeat:no-repeat;
     background-size: 100% 120%;
-    overflow:hidden;
+    overflow-x:hidden;
     
 }
 
@@ -50,37 +50,9 @@ h2{
     font-size: 2.5rem;
     color: white;
 }
-#tarjeta{
-    position: relative;
-    border: none;
-    border-radius: 1.5rem;
-    
-}
-.select-style{
-    width: 30.0rem;
-    font-size: 2.0rem;
-    background: none;
-    border: none;
-    color: white;
-    outline: none;
-    border-bottom: solid 0.2rem white;
-    margin-bottom: 5.0rem;
-}
-option{
-    color:black;
-}
-.seleccion{
-    background: #44A08D;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-    
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    
-}
+
+
 #consultar{
     font-size: 1.7rem;
     width:11.0rem;
@@ -99,8 +71,93 @@ background: linear-gradient(to bottom, #093637, #44A08D); /* W3C, IE 10+/ Edge, 
     margin: 1.0rem 1.0rem 1.0rem 1.0rem;
 }
 
+.tarjeta{
+    margin-top: 1.5rem;
+    width:20.0rem;
+    height: 19.0rem;
+    background: #c31432;  
+    background: -webkit-linear-gradient(to right, #240b36, #c31432); 
+    background: linear-gradient(to right, #240b36, #c31432); 
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+}
+.btn{
+    font-size:1.6rem;
+    
+}
+.tarjeta:hover{
+    
+    background: #c31432;
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.tarjeta p{
+    color:white;
+    font-size: 1.5rem;
+}
+.tarjeta h1,h2,h3,h4,h5{
+    color:white;
+}
+.btn_add{
+    background: none;
+    border: none;
+    margin:2.5rem;
+}
+.btn-center{
+    margin-left:5.5rem;
+}
 
+.productos{
+    margin-top:1.5rem;
+    display:flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.view_product h2,p,a{
+    font-size: 1.6rem;
+    color:white;
+}
+.view_product{
+    background: #c31432;  
+    background: -webkit-linear-gradient(to right, #240b36, #c31432); 
+    background: linear-gradient(to right, #240b36, #c31432); 
+    position: relative;
+    display:flex;
+    width: 50.0rem;
+    top: -40.0rem;
+    border-radius: 1.7rem;
+    padding: 2.0rem;
+}
+.view_product_buttons{
+    display:flex;
+    justify-content: space-around;
+}
 
+.add_product{
+    width:50.0rem;
+    background: #c31432;  
+    background: -webkit-linear-gradient(to right, #240b36, #c31432); 
+    background: linear-gradient(to right, #240b36, #c31432); 
+    border-radius: 1.5rem;
+    display:flex;
+    justify-content: space-between;
+    top: -40.0rem;
+    position: relative;
+}
+.btn-img{
+    background: none;
+    border: none;
+    margin:2.5rem;
+}
+.btn-cerrar{
+
+    background: none;
+    border: none;
+    margin:2.5rem;
+    position: relative;
+    top:-13.0rem;
+    right: -5.0rem;
+}
 
 
 
